@@ -1,0 +1,104 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 15px 30px;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(77, 75, 75, 0.568), rgba(26, 25, 25, 0.664) );
+    border-bottom: 1px solid rgba(70, 69, 69, 0.568);
+}
+.main {
+    background-image: linear-gradient(rgba(77, 75, 75, 0.568), rgba(26, 25, 25, 0.664) );
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}  
+main .darkTheme {
+    background-image: linear-gradient(rgb(244, 247, 250), rgba(170, 169, 253, 0.938) );
+    border-bottom: 1px solid rgba(145, 125, 253, 0.932);
+}
+.changeImg  {
+    height: 50px;
+    width: 55px;
+}
+.pokeImg {
+    height: 50px;
+    width: 55px; 
+}
+.btn {
+    padding: 8px 8px;
+    border-radius: 12px;
+    box-shadow: 3px 1px 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(70, 68, 68, 0.568);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+.ul {
+    list-style: none;
+}
+.card {
+    height: 400px;
+    width: 280px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 14px;
+    border: none;
+    box-shadow: 3px 1px 15px rgba(0, 0, 0, 0.514);
+    background-image: linear-gradient(165.9deg, rgba(223, 255, 191, 1), rgb(255, 203, 240) );
+    cursor: pointer;
+    /*rgb dark theme:background: linear-gradient(0deg, #FCFCFD, #FCFCFD),
+linear-gradient(264.59deg, #42E6F0 70.32%, #C834E0 95.55%);*/
+}
+.image {
+    height: 100px;
+    width: 100px;
+}
+.header {
+    padding: 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    background-color: rgb(128, 2, 92);
+    color: rgb(247, 247, 153);
+}
+.character {
+    font-family: 'Press Start 2P', cursive;
+    padding: 3px;
+    padding-right: 3px;
+}
+.typeOne {
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 3px 8px;
+    background-color: rgb(247, 247, 153);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
