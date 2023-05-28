@@ -7,18 +7,24 @@
     <title>Pokemon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./src/css.css">
 </head>
-<body>
+<body class="dark">
     <header class="menu">
-        <a href="#" class="btn">
+        <div class="menuLogo">
             <img src="./src/imgs/pokeball.png" class="pokeImg"/>
-        </a>
-        <button class="btn" id="changeTheme">
-            <img src="./src/imgs/sun.png" class="changeImg" />
-        </button>
+            <h1 class="headerTitle">Pokemon Card Game</h1>
+        </div>
+        <div class="themeContent">
+            <input type="checkbox" name="changeTheme" id="changeTheme" class="input">
+            <label for="changeTheme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+            </label>
+        </div>
     </header>
     <main class="main">
         <ul class="pokemonList">
@@ -27,9 +33,11 @@
                     <span class="character">Pikachu</span>
                     <span class="character">#001</span>
                 </div>
-                <img src="./src/imgs/pikachu.png" class="image" />
+                <img src="https://pokejungle.net/wp-content/uploads/2019/04/Pikachu.gif" class="pikachuImage" />
                 <ul>
-                    <li class="typeOne">Electric</li>
+                    <li class="typeOne">Electric
+                        <img src="https://www.firstfishonline.com/wp-content/uploads/2018/02/Lightning-bolt-Gif.gif" alt="" width="20px" height="25px">
+                    </li>
                 </ul>
                 <p class="info">Pikachu is yellow with brown stripes on its back, black-tipped ears, red electrical pouches on its cheeks, and has a lightning-bolt-shaped tail.</p>
             </li>
@@ -38,9 +46,11 @@
                     <span class="character">Charmander</span>
                     <span class="character">#002</span>
                 </div>
-                <img src="./src/imgs/charmander.png" class="image"/>
+                <img src="https://i.seadn.io/gae/moqfl0TcSwvNFcY5mWSzT3CUKyKdVHBk_tBjKSrsh294Rec_airrPwL4Vjtgkp__bXzw6uDwf79tN7hct38FelAZXH26heKmf2GCHSk?auto=format&dpr=1&w=1000" class="image"/>
                 <ul>
-                    <li class="typeOne">Fire</li>
+                    <li class="typeOne">Fire
+                        <img src="https://i.gifer.com/5Mz4.gif" alt="" width="30px" height="30px">
+                    </li>
                 </ul>
                 <p class="info">Charmander is a small, bipedal, dinosaur like Pokémon. Most of its body is colored orange, while its underbelly is a light yellow color.</p>
             </li>
@@ -49,9 +59,11 @@
                     <span class="character">Bulbasaur</span>
                     <span class="character">#003</span>
                 </div>
-                <img src="./src/imgs/bulbasaur.png" class="image"/>
-                <ul>
-                    <li class="typeOne">Poison</li>
+                <img src="https://thumbs.gfycat.com/ElaborateOldCygnet-max-1mb.gif" class="image"/>
+                <ul style="display: flex">
+                    <li class="typeOne">Poison
+                        <img src="https://media3.giphy.com/media/dzUsgQtVwIxavzNJqc/giphy.gif?cid=6c09b95261d2c0a908ff5bea745ca7ff60feadb8b1c59e10&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=s" alt="" width="30px" height="25px">
+                    </li> 
                 </ul>
                 <p class="info">Bulbasaur are small, squat amphibian and plant Pokémon that move on all four legs, and have blue-green bodies with darker blue-green spots.</p>
             </li>
@@ -60,20 +72,23 @@
                     <span class="character">Eevee</span>
                     <span class="character">#004</span>
                 </div>
-                <img src="./src/imgs/eevee.png" class="image"/>
+                <img src="https://media.tenor.com/K2thrI_oaXsAAAAj/eevee-pokemon.gif" class="image"/>
                 <ul>
-                    <li class="typeOne">Normal</li>
-                </ul>
+                    <li class="typeOne">Normal
+                    </li>
+                </ul>              
                 <p class="info">Eevee is a mammalian creature with brown fur, a bushy tail that has a cream-colored tip, and a furry collar that is also cream-colored.</p>
             </li>
             <li class="card">
                 <div class="header">
-                    <span class="character">Mewtwo</span>
+                    <span class="character">Gengar</span>
                     <span class="character">#005</span>
                 </div>
-                <img src="./src/imgs/mewtwo.png" class="image"/>
+                <img src="https://i.gifer.com/5Mz3.gif" class="image" />
                 <ul>
-                    <li class="typeOne">Psychic</li>
+                    <li class="typeOne">Ghost
+                        <img src="https://media4.giphy.com/media/WUal3fbhg4HQydYHuy/giphy.gif?cid=6c09b9526854221d0eb79a2165dad7a6bbefcf7d2ec8f5fc&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=s" width="30px" height="30px">
+                    </li>
                 </ul>
                 <p class="info">Mewtwo is an artificial Pokémon. It is a bipedal, humanoid Pokémon with some feline features. It is primarily gray with a long, purple tail.</p>
             </li>
@@ -82,31 +97,37 @@
                     <span class="character">Squirtle</span>
                     <span class="character">#006</span>
                 </div>
-                <img src="./src/imgs/squirtle.png" class="image"/>
+                <img src="https://openseauserdata.com/files/638061ab5df6e468b1bdbe803826f6b3.gif" class="image"/>
                 <ul>
-                    <li class="typeOne">Water</li>
+                    <li class="typeOne">Water
+                        <img src=" https://i.gifer.com/embedded/download/Pa1.gif" alt="" width="30px" height="30px">
+                    </li>
                 </ul>
                 <p class="info">Squirtles are turtle Pokémon with large eyes and chubby cheeks, capable of moving either on two feet or on all fours.</p>
             </li>
             <li class="card">
                 <div class="header">
-                    <span class="character">Ninetales</span>
+                    <span class="character">Caterpie</span>
                     <span class="character">#007</span>
                 </div>
-                <img src="./src/imgs/ninetales.png" class="image"/>
+                <img src="https://i.seadn.io/gae/FcW5mVrL3DjSxmcytn_3dzNs7ZjodxN4uxIIh89Zz5sVEoh6J26KsZmgAZmnAtUaC0sCQbQtF4rh3yAGEL1rcEzb1r4wp4FQkhHqdA?auto=format&dpr=1&w=1000" class="image"/>
                 <ul>
-                    <li class="typeOne">Fire</li>
+                    <li class="typeOne">Shield
+                        <img src="https://cdna.artstation.com/p/assets/images/images/023/009/378/original/carlotta-bonig-shield-power-art.gif?1577705156" width="35px" height="32x">
+                    </li>
                 </ul>
                 <p class="info">Ninetales is a quadrupedal canine Pokémon covered in thick, luxurious golden-white fur. It has slender legs with three-toed paws and nine, long tails with pale orange tips.</p>
             </li>
             <li class="card">
                 <div class="header">
-                    <span class="character">Snorlax</span>
+                    <span class="character">Clefairy</span>
                     <span class="character">#008</span>
                 </div>
-                <img src="./src/imgs/snorlax.png" class="image"/>
+                <img src="https://static.wikia.nocookie.net/pokemon/images/f/f0/Clefairy_SS.gif/revision/latest?cb=20200109111439" class="image"/>
                 <ul>
-                    <li class="typeOne">Normal</li>
+                    <li class="typeOne">Magic
+                        <img src="https://thumbs.gfycat.com/BigHelplessGreendarnerdragonfly-max-1mb.gif" width="30px" height="30px">
+                    </li>
                 </ul>
                 <p class="info">Snorlax is a very large and fat mammalian Pokémon that has grayish-blue fur and an apricot-color underbelly.</p>
             </li>
