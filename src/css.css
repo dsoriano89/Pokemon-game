@@ -100,19 +100,21 @@
     margin-top: 1rem;
     border-radius: 3px;
     padding: .2rem .5rem;
-    background-color: rgba(252, 252, 251, 0.199);
+    background-color: rgb(255, 0, 191);
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-    box-shadow: .5px .5px 10px .5px #a5b8aa;
+    color: #000;
 }
 .info {
-    text-align: center;
-    font-size: .9rem;
+    text-align: start;
+    font-size: 1rem;
     font-weight: bold;
     height: 250px;
+    list-style: none;
+    text-transform: uppercase;
 }
 /* Dark theme */
 
@@ -149,4 +151,16 @@
     justify-content: space-between;
     box-shadow: .5px .5px 10px .5px #000000;
     color: #ecfff1;
+}
+.dark .typeOne {
+    margin-top: 1rem;
+    border-radius: 3px;
+    padding: .2rem .5rem;
+    background-color: rgb(247, 247, 153);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #000;
 }
